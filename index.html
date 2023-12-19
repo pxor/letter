@@ -11,39 +11,35 @@
             background-image: url('https://img.freepik.com/free-vector/elegant-valentine-background-with-lighting-effect_1340-4358.jpg?w=1380&t=st=1702987674~exp=1702988274~hmac=c2f30dfb4bdef5343af4656ff2f699e4aea93a47471f4c240e4ce62f944fbcc6');
             background-size: cover;
             font-family: 'Shadows Into Light', cursive;
+            color: #fff;
         }
 
         #envelope {
-            width: 350px;
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
             background-color: transparent;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
             cursor: pointer;
             transition: transform 0.3s;
         }
 
         #envelope img {
             width: 100%;
-            height: 100%;
             border: 2px solid #db223b;
             border-radius: 10px;
         }
 
         #envelope:hover {
-            transform: translate(-50%, -60%);
+            transform: translateY(-10px);
         }
 
         #letter-container {
             display: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             max-width: 600px;
+            margin: 0 auto;
             padding: 20px;
-            background-image: url('https://img.freepik.com/free-vector/glitter-pink-leafy-frame_53876-116089.jpg?w=740&t=st=1702987448~exp=1702988048~hmac=57a4cab6b03a890cd577df92649546d2c138f7623662696724cbf6b3f05eef3d'); /* Replace with your image URL */
+            background-image: url('https://img.freepik.com/free-vector/glitter-pink-leafy-frame_53876-116089.jpg?w=740&t=st=1702987448~exp=1702988048~hmac=57a4cab6b03a890cd577df92649546d2c138f7623662696724cbf6b3f05eef3d');
             background-size: cover;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -52,16 +48,14 @@
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
-            border: 1px, solid black;
-            font-size: 40px;
+            font-size: 24px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             -webkit-text-stroke: 2px black; /* For WebKit/Blink browsers (Chrome, Safari) */
-            color: rgb(133, 206, 255); /* Set the text color */
-
         }
 
         #letter-content {
             text-align: justify;
+            font-size: 16px;
         }
 
         #closing {
